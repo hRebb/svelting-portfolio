@@ -1,0 +1,31 @@
+@mixin filter-gradient($first, $second, $align) {
+    background: linear-gradient($first, $second);
+}
+
+section {
+    background: linear-gradient(
+        to right bottom, #91eae4, 
+        #78dceb, #6ccdf0, 
+        #73bbef, #86a8e7
+    );
+}
+
+.secondSection {
+    background: none;
+    margin-bottom: 25px;
+    margin-left: 608px;
+}
+
+.thirdSection {
+    margin-top: 294px;
+}
+
+.stackTitle {
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: mix(#39a9db , rebeccaPurple, 45%);
+}

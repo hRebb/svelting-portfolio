@@ -1,0 +1,36 @@
+@mixin corpusSizing ($i) {
+    @for $i from 1 through 1 {
+        .corpus-#{$i} {
+            width: 50px * $i;
+            height: 50px * $i;
+            border-radius: 50px * $i;
+            display: contents;
+        }
+    }
+}
+
+.corpus-title {
+    @include corpusSizing(1);
+    margin-left: 615px;
+    font-style: italic;
+    font-family: math;
+    color: mix(#39a9db , rebeccaPurple, 45%);
+}
+
+.firstDiv {
+    display: list-item;
+    font-size: small;
+    color: rebeccapurple;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+.corpus-text {
+    line-height: 12px;
+}
+
+ul {
+    padding-left: 0px;
+}

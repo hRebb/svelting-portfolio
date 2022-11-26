@@ -1,0 +1,43 @@
+.imgFramework {
+    width: 200px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+%button {
+    box-shadow:inset 0px -3px 7px 0px #1a86b8;
+	background:linear-gradient(to bottom, #1877ad 5%, #10487a 100%);
+	background-color:#1877ad;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #040c24;
+
+    &:hover {
+        background:linear-gradient(to bottom, #10487a 5%, #1877ad 100%);
+	    background-color:#10487a;
+    }
+}
+
+.next {
+    @extend %button;
+    width: 100px;
+    margin-left: 81px;
+}
+
+.secondContainer {
+    display: grid;
+    margin-left: 525px;
+}
+
+h2 {
+	color: #354992;
+    margin-left: 56px;
+    margin-bottom: 0px;
+}

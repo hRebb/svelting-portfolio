@@ -1,0 +1,58 @@
+$footerBottom : 0px;
+$color1: #7f7fd5;
+
+@mixin headStyle($alignCenter, $dropShadow) {
+    text-align: $alignCenter;
+    &:hover{
+        filter: $dropShadow;
+    }
+}
+
+@mixin bc-image($image, $height, $width) {
+    background-image: url("../icons/" + $image + ".png");
+    background-size: cover;
+    height: $height;
+    width: $width;
+}
+
+footer{
+    @include headStyle(center, drop-shadow(-1px 0px 6px #9ba7df));
+    height: 200px;
+    background: radial-gradient(ellipse at top, #c3e5fc, transparent);
+    margin-top: 100px;
+}
+
+.h2_foot{
+    margin-bottom: $footerBottom;
+    color: $color1;
+    margin-top: 0px;
+}
+
+.foot_title {
+    margin-bottom: 15px;
+}
+
+.url_social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.github {
+    @include bc-image(github, 95px, 95px);
+}
+
+.gitlab {
+    @include bc-image(gitlab, 95px, 95px);
+}
+
+.linkedin {
+    @include bc-image(linkedin, 95px, 95px);
+}
+
+.codepen {
+    @include bc-image(code, 110px, 110px);
+}
+
+.codingame {
+    @include bc-image(codein, 108px, 101px);
+}
