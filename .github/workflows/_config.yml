@@ -1,0 +1,8 @@
+# _config.yml
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: /main/src/App.svelte/
